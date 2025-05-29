@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DST Multi-Cloud Transformation Plan - A comprehensive deployment strategy for cloud transformation">
+    <meta name="keywords" content="cloud transformation, multi-cloud, DST, Ollion, AWS, Azure, GCP">
+    <meta name="author" content="Ollion">
+    <meta name="theme-color" content="#2563eb">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>">
+    <title>DST Multi-Cloud Transformation Plan</title>
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/chart.js" as="script">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Visualization & Content Choices:
+        Report Info: Executive Summary (Sec I) -> Goal: Inform -> Presentation: Static text, key metrics in cards. -> Interaction: None. -> Justification: Provides high-level context.
+        Report Info: Landing Zones (Sec II) -> Goal: Compare & Inform -> Presentation: Text comparison (UNN vs CSP), HTML/CSS flow diagram for transition. -> Interaction: None. -> Justification: Clearly outlines foundational elements and transition.
+        Report Info: Use Cases 1-4 (Sec III) -> Goal: Organize & Inform -> Presentation: Accordion/tabbed sections for each use case detailing objectives, services, activities, deliverables. -> Interaction: Expand/collapse. -> Justification: Allows focused exploration of each value-delivery stage.
+        Report Info: Deployment Roadmap (Sec VI) -> Goal: Show Change/Progress -> Presentation: Chart.js horizontal bar chart (Gantt-like). -> Interaction: Hover for tooltips (activities), click to highlight (future). -> Justification: Visually represents project timeline and phases. -> Library: Chart.js.
+        Report Info: Governance (Sec VII) -> Goal: Inform -> Presentation: HTML table for RACI, text for other frameworks. -> Interaction: None. -> Justification: Presents structured governance information clearly.
+        Report Info: Service Delivery (Sec IV) -> Goal: Inform -> Presentation: Text descriptions of white-labeling model, CSP selection, cross-cloud governance. -> Interaction: None. -> Justification: Explains the operational model.
+        Report Info: Key Considerations (Sec VIII) -> Goal: Inform -> Presentation: Expandable sections for key topics. -> Interaction: Expand/collapse. -> Justification: Highlights important long-term factors.
+        Report Info: Glossary (Appendix B) -> Goal: Inform/Organize -> Presentation: HTML list/table. -> Interaction: None (Future: filter/search). -> Justification: Provides definitions.
+        CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. All diagrams will be HTML/CSS based. -->
+</head>
+<body class="text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <h1 class="text-2xl font-bold accent-color">DST Multi-Cloud Transformation</h1>
+                <button id="mobileMenuButton" class="md:hidden p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav id="mainNav" class="hidden md:flex flex-col md:flex-row md:space-x-6 py-2 border-t md:border-t-0">
+                <a href="#overview" class="nav-link py-2 px-1 border-b-2 border-transparent hover:border-blue-500 hover:text-blue-600">Overview</a>
+                <a href="#landingZones" class="nav-link py-2 px-1 border-b-2 border-transparent hover:border-blue-500 hover:text-blue-600">Landing Zones</a>
+                <a href="#useCases" class="nav-link py-2 px-1 border-b-2 border-transparent hover:border-blue-500 hover:text-blue-600">Use Cases</a>
+                <a href="#roadmap" class="nav-link py-2 px-1 border-b-2 border-transparent hover:border-blue-500 hover:text-blue-600">Roadmap</a>
+                <a href="#serviceDelivery" class="nav-link py-2 px-1 border-b-2 border-transparent hover:border-blue-500 hover:text-blue-600">Service Delivery</a>
+                <a href="#governance" class="nav-link py-2 px-1 border-b-2 border-transparent hover:border-blue-500 hover:text-blue-600">Governance</a>
+                <a href="#keyConsiderations" class="nav-link py-2 px-1 border-b-2 border-transparent hover:border-blue-500 hover:text-blue-600">Considerations</a>
+                <a href="#glossary" class="nav-link py-2 px-1 border-b-2 border-transparent hover:border-blue-500 hover:text-blue-600">Glossary</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4 sm:p-6 lg:p-8">
+        <!-- Content sections will be loaded dynamically -->
+    </main>
+
+    <footer class="text-center p-4 text-sm text-gray-500 border-t mt-8">
+        &copy; Ollion & DST Collaboration. Interactive Deployment Plan.
+    </footer>
+
+    <div id="messageModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <p id="modalMessageText"></p>
+            <button id="modalCloseButton" class="modal-close-btn">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

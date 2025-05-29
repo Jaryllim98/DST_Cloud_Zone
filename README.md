@@ -1,4 +1,4 @@
-# DST Cloud Zone Multi-Cloud Transformation Plan
+# DST Multi-Cloud Transformation Plan
 
 An interactive web application that outlines Ollion's comprehensive deployment strategy for DST's multi-cloud transformation. This application provides a detailed roadmap for implementing IaaS, Migration Services, Data Storage, and DRaaS, focusing on a phased journey from DST's UNN infrastructure to white-labeled offshore CSP environments.
 
