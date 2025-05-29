@@ -36,14 +36,18 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
         
+        // First, hide all sections
         sections.forEach(section => {
-            if (section.id === currentSectionId) {
-                section.classList.add('active');
-            } else {
-                section.classList.remove('active');
-            }
+            section.classList.remove('active');
         });
 
+        // Then, show the current section
+        const currentSection = document.getElementById(currentSectionId);
+        if (currentSection) {
+            currentSection.classList.add('active');
+        }
+
+        // Update navigation links
         navLinks.forEach(link => {
             if (link.getAttribute('href') === '#' + currentSectionId) {
                 link.classList.add('active');
